@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Page</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #0a0a0a;
+      color: #ffb6f6;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    /* Logo Styles */
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 100px; /* Adjust the width as needed */
+      height: auto; /* Adjust the height as needed */
+    }
+
+    /* Line Styles */
+    .header-line {
+      border-top: 1px solid #6c0354;
+      margin: 10px 0;
+    }
+
+    /* Main Content Styles */
+    .main-content {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .profile-pic {
+      float: right;
+      width: 150px;
+      height: 150px;
+      margin-left: 20px;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fec0fa;
+  }
+    
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  nav ul li a {
+    color: #f8f3f7;
+    text-decoration: none;
+  }
+
+  
+  main {
+    margin: 20px;
+  }
+
+  section {
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    margin: 0;
+  }
+ 
+  footer {
+    background-color: #333;
+    color: #f9b1ee;
+    padding: 20px;
+    text-align: center;
+  }
+
+  footer p {
+    margin: 0;
+  }
+</style>  
+</head>
+<body>
+  <header>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqB3PEXEZRwjZNmRiT0xdlahfNdIM9TO3IVQ&usqp=CAU.jpg" alt="Hospital Logo" class="logo"> <!-- Added -->
+    <h1>Healthy Hospital</h1>
+    <hr class="header-line">
+    
+  <br>
+    <nav>
+      <ul>
+        <li><a href="Home Page.html">Home</a></li>
+        <li><a href="Appointments.html">Appointments</a></li>
+        <li><a href="Patients.html">Patients</a></li>
+        <li><a href="Doctors.html">Doctors</a></li>
+        <li><a href="Reports.html">Reports</a></li>
+        <li><a href="Contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <h1>Welcome, Appointment booked successfully!<span id="patient-name"></span></h1>
+    <div id="patient-info"></div>
+  
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const name = urlParams.get('name');
+      const dob = urlParams.get('dob');
+      const email = urlParams.get('email');
+      const gender = urlParams.get('gender');
+      const phone = urlParams.get('phone');
+      const doctor = urlParams.get('doctor');
+      const message = urlParams.get('message');
+      const timeSlot = urlParams.get('time-slot');
+      const appointmentDate = urlParams.get('appointment-date');
+    
+      const patientInfoElement = document.getElementById('patient-info');
+      patientInfoElement.innerHTML = `
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Date of Birth:</strong> ${dob}</p>
+        <p><strong>E-mail:</strong> ${email}</p>
+        <p><strong>Gender:</strong> ${gender}</p>
+        <p><strong>Phone:</strong> ${phone}</p>
+        <p><strong>Doctor:</strong> ${doctor}</p>
+        <p><strong>Note:</strong> ${message}</p>
+        <p><strong>Time Slot:</strong> ${timeSlot}</p>
+        <p><strong>Appointment Date:</strong> ${appointmentDate}</p>
+       `;
+  </script>
+  <br><br><br><br><br><br><br><br><br><br>
+  </div>
+  <footer>
+    <p>&copy; 2023 Your Hospital. All rights reserved. Follow us on Insta and Youtube for more healthy tips and tricks</p>
+  </footer>
+</body>
+</html>
+
+

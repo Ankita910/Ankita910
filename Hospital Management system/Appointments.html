@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Appointment</title>
+
+  <style>
+    
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0a0a0a;
+  color: #ffb6f6;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Logo Styles */
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Adjust the height as needed */
+}
+
+/* Line Styles */
+.header-line {
+  border-top: 1px solid #6c0354;
+  margin: 10px 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fec0fa;
+}
+  
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+main {
+  margin: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin: 0;
+}
+
+/* Appointment Page Styles */
+    .appointment-page {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #f8f0f8;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .appointment-form {
+      margin-top: 40px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 4px;
+      border: 1px solid #f7f3f7;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    button {
+      background-color: #333333;
+      color: #fcf9f9;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #000c05;
+    }
+  </style>
+</head>
+<body>
+    <header>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqB3PEXEZRwjZNmRiT0xdlahfNdIM9TO3IVQ&usqp=CAU.jpg" alt="Hospital Logo" class="logo"> <!-- Added -->
+    <h1>Healthy Hospital</h1>
+    <hr class="header-line">
+    
+  <br>
+    <nav>
+      <ul>
+        <li><a href="Home Page.html">Home</a></li>
+        <li><a href="Appointments.html">Appointments</a></li>
+        <li><a href="Patients.html">Patients</a></li>
+        <li><a href="Doctors.html">Doctors</a></li>
+        <li><a href="Reports.html">Reports</a></li>
+        <li><a href="Contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="appointment-page">
+    <h1>Book an Appointment</h1>
+
+    <form id="appointment-form" action="Patients.html" method="GET">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <div class="form-group">        
+      </div>
+
+
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+
+      
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      
+
+      <div class="form-group">
+        <label for="phone">Your Phone Number</label>
+        <input type="text" id="phone" name="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="doctor">Select Doctor</label>
+        <select id="doctor" name="doctor" required>
+          <option value="">Select</option>
+          <option value="Dr. Isha Sharma ">Dr.Isha Sharma </option>
+          <option value="Dr. Siddhartha Mukherjee ">Dr. Siddhartha Mukherjee </option>
+          <option value="Dr. Naresh Trehan">Dr. David Johnson </option>
+          <option value="Dr. Sudhansu Bhattacharyya">Dr. Sudhansu Bhattacharyya</option>
+          <option value="Dr. Surbhi Anand ">Dr. Surbhi Anand  </option>
+          <option value="Dr. Sanjay Sachdeva">Dr. Sanjay Sachdeva </option>
+          <option value="Dr. Aditya Gupta">Dr. Aditya Gupta </option>
+          <option value="Dr. H. S. Chhabra"> Dr. H. S. Chhabra </option>
+          <option value="Dr. Gaurav Kharya">Dr. Gaurav Kharya </option>
+        
+        </select>
+      </div>
+      <div>
+      <label for="time-slot">Time Slot:</label>
+      <select id="time-slot" name="time-slot" required>
+        <option value="">Select a time slot</option>
+        <option value="08:00">08:00 AM</option>
+        <option value="09:00">09:00 AM</option>
+        <option value="10:00">10:00 AM</option>
+        <option value="11:00">11:00 AM</option>
+        <option value="12:00">12:00 NOON</option>
+        <option value="14:00">14:00 PM</option>
+        <option value="15:00">15:00 PM</option>
+        <option value="16:00">16:00 PM</option>
+        <option value="17:00">17:00 PM</option>
+        <option value="18:00">18:00 PM</option>
+        <option value="19:00">19:00 PM</option>
+        <option value="20:00">20:00 PM</option>    
+        <!-- Add more time slot options as needed -->
+      </div>
+      <div>
+        <label for="appointment-date">Appointment Date:</label>
+        <input type="date" id="appointment-date" name="appointment-date" required>
+        
+        <!-- Other form fields -->
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Additional Notes</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+      <button type="submit">Book Appointment</button>
+    </form>
+  </div>
+
+  <script>
+    form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+  
+    const name = document.getElementById('name').value;
+    const dob = document.getElementById('dob').value;
+    const email = document.getElementById('email').value;
+    const gender = document.getElementById('gender').value;
+    const phone = document.getElementById('phone').value;
+    const doctor = document.getElementById('doctor').value;
+    const message = document.getElementById('message').value;
+    document.getElementById('time-slot').value;
+    const appointmentDate = document.getElementById('appointment-date').value;
+    // Redirect to the patient page with the form data as query parameters
+    window.location.href = `patient.html?;name=${encodeURIComponent(name)}&dob=${encodeURIComponent(dob)}&gender=${encodeURIComponent(gender)}&phone=${encodeURIComponent(phone)}&doctor=${encodeURIComponent(doctor)}&message=${encodeURIComponent(message)}&timeSlot=${encodeURIComponent(timeSlot)}&appointmentDate=${encodeURIComponent(appointmentDate)}`;
+  })
+
+  </script>
+</body>
+</html>

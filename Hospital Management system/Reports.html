@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Page</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #0a0a0a;
+      color: #ffb6f6;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    /* Logo Styles */
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 100px; /* Adjust the width as needed */
+      height: auto; /* Adjust the height as needed */
+    }
+
+    /* Line Styles */
+    .header-line {
+      border-top: 1px solid #6c0354;
+      margin: 10px 0;
+    }
+
+    /* Main Content Styles */
+    .main-content {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fec0fa;
+  }
+    
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  nav ul li a {
+    color: #f8f3f7;
+    text-decoration: none;
+  }
+
+  
+  main {
+    margin: 20px;
+  }
+
+  section {
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+ 
+    footer {
+    background-color: #333;
+    color: #f9b1ee;
+    padding: 20px;
+    text-align: center;
+    }
+
+   footer p {
+    margin: 0;
+  }
+  
+  .report {
+      margin-bottom: 20px;
+    }
+
+    .report-title {
+      font-weight: bold;
+    }
+
+    .billing {
+      margin-bottom: 20px;
+    }
+
+    .billing-title {
+      font-weight: bold;
+    }
+
+    .billing-info {
+      margin-top: 10px;
+    }
+
+    .download-button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+   </style>
+</head>
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqB3PEXEZRwjZNmRiT0xdlahfNdIM9TO3IVQ&usqp=CAU.jpg" alt="Hospital Logo" class="logo"> <!-- Added -->
+        <h1>Healthy Hospital</h1>
+        <hr class="header-line">
+        
+      <br>
+        <nav>
+          <ul>
+            <li><a href="Home Page.html">Home</a></li>
+            <li><a href="Appointments.html">Appointments</a></li>
+            <li><a href="Patients.html">Patients</a></li>
+            <li><a href="Doctors.html">Doctors</a></li>
+            <li><a href="Reports.html">Reports</a></li>
+            <li><a href="Contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+    <div class="main-content">
+        <h1 align="center">Reports and Billing Details</h1><br><br>
+    
+        <div class="report">
+          <h2 class="report-title">Report 1</h2>
+          <p>Report description...</p>
+          <button class="download-button" onclick="downloadPDF('report1')">Download Report 1 PDF</button>
+        </div>
+
+        <div class="report">
+            <h2 class="report-title">Report 2</h2>
+            <p>Report description...</p>
+            <button class="download-button" onclick="downloadPDF('report2')">Download Report 2 PDF</button>
+          </div>
+
+          <div class="billing">
+            <h2 class="billing-title">Billing Details</h2>
+            <div class="billing-info">
+              <p>Invoice No: 12345</p>
+              <p>Amount Due: $500</p>
+              <p>Due Date: 2023-07-01</p>
+            </div>
+            <button class="download-button" onclick="downloadPDF('billing')">Download Billing Details PDF</button>
+          </div>
+        </div>
+      
+        <footer>
+            <p>&copy; 2023 Your Hospital. All rights reserved. Follow us on Insta and Youtube for more healthy tips and tricks</p>
+        </footer>
+      
+        <script>
+          function downloadPDF(section) {
+            // Create a new PDF file
+      const pdf = new jsPDF();
+
+      // Generate PDF content based on the selected section
+      switch (section) {
+        case 'report1':
+          pdf.text('Report 1 content', 10, 10);
+          pdf.save('report1.pdf');
+          break;
+        case 'report2':
+          pdf.text('Report 2 content', 10, 10);
+          pdf.save('report2.pdf');
+          break;
+        case 'billing':
+          pdf.text('Billing details content', 10, 10);
+          pdf.save('billing.pdf');
+          break;
+        default:
+          console.log('Invalid section');
+      }
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</body>
+</html>
