@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Website</title>
+  <style>
+    /* Add your CSS styles here */
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Tours</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Welcome to Our Travel Website</h1>
+      <p>Explore the world with us!</p>
+      <a href="#" class="button">Book Now</a>
+    </section>
+
+    <section>
+      <h2>Popular Destinations</h2>
+      <div class="destination">
+        <img src="image1.jpg" alt="Destination 1">
+        <h3>Destination 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="destination">
+        <img src="image2.jpg" alt="Destination 2">
+        <h3>Destination 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <!-- Add more destination sections as needed -->
+    </section>
+
+    <section>
+      <h2>Popular Tours</h2>
+      <div class="tour">
+        <img src="tour1.jpg" alt="Tour 1">
+        <h3>Tour 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="tour">
+        <img src="tour2.jpg" alt="Tour 2">
+        <h3>Tour 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <!-- Add more tour sections as needed -->
+    </section>
+
+    <section>
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat, dolor et commodo consectetur, justo massa mattis lacus, at ultricies odio risus sed velit.</p>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Travel Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Website</title>
+  <style>
+
+
+
+
+
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main styles */
+.booking {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.tabs__list {
+  display: flex;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.tabs__item {
+  margin-right: 10px;
+}
+
+.tabs__link {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  border-radius: 4px 4px 0 0;
+  transition: background-color 0.3s ease;
+}
+
+.tabs__link:hover {
+  background-color: #ccc;
+}
+
+.tabs__link[aria-selected="true"] {
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+}
+
+.tabs-content {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 4px 4px 4px;
+}
+
+/* Form styles */
+fieldset {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="booking booking-full tabs" id="booking-tabs">
+    <div class="l-wrapper js-tabs tabs" id="tabsopf9gh0o3u">
+        <ul class="js-tablist tabs__list" role="tablist" id="tabs__listopf9gh0o3u">
+            <li class="js-tablist__item tabs__item" role="presentation" id="tabs__itemopf9gh0o3u-1">
+                <a class="js-tablist__link tabs__link" id="label_book-tabs-37949-top" role="tab" aria-controls="book-tabs-37949-top" tabindex="0" aria-selected="true">Lodging</a>
+            </li>
+            <li class="js-tablist__item tabs__item" role="presentation" id="tabs__itemopf9gh0o3u-2">
+                <a class="js-tablist__link tabs__link" id="label_book-tabs-37951-top" role="tab" aria-controls="book-tabs-37951-top" tabindex="-1" aria-selected="false">Flights</a>
+            </li>
+            <li class="js-tablist__item tabs__item" role="presentation" id="tabs__itemopf9gh0o3u-3">
+                <a class="js-tablist__link tabs__link" id="label_book-tabs-37950-top" role="tab" aria-controls="book-tabs-37950-top" tabindex="-1" aria-selected="false">Offers <span>&amp; Packages</span></a>
+            </li>
+            <li class="js-tablist__item tabs__item" role="presentation" id="tabs__itemopf9gh0o3u-4">
+                <a class="js-tablist__link tabs__link" id="label_book-tabs-37955-top" role="tab" aria-controls="book-tabs-37955-top" tabindex="-1" aria-selected="false">Shuttles</a>
+            </li>
+        </ul>
+        <div class="tabs-content">
+            <div class="tab-panes">
+                <div class="js-tabcontent tabs__content" id="book-tabs-37949-top" role="tabpanel" aria-labelledby="label_book-tabs-37949-top">
+                    <h2 class="u-hide-visual">Lodging</h2>
+                    <form method="get" action="https://book.telluride.com/products/lodging?" target="_blank">
+                        <fieldset>
+                            <label class="date" title="Arrival Date"> 
+                                <span>Arrival Date </span>
+                                <input name="arrivaldate" class="date" type="text" placeholder="Arrival" required="" fdprocessedid="kaacp">
+                            </label>
+                            <label class="date" title="Departure Date"> 
+                                <span>Departure Date </span> 
+                                <input name="departuredate" class="date" type="text" placeholder="Departure" required="" fdprocessedid="0i6qm">
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label class="select" title="Adults"> 
+                                <span>Adults </span>
+                                <div>
+                                    <select name="adultcount" id="adultcount" title="Adults" required="" fdprocessedid="drx5k">
+                                        <option value="1" selected="">1 Adult</option>
+                                        <option value="2">2 Adults</option>
+                                        <option value="3">3 Adults</option>
+                                        <option value="4">4 Adults</option>
+                                        <option value="5">5 Adults</option>
+                                        <option value="6">6 Adults</option>
+                                        <option value="7">7 Adults</option>
+                                        <option value="8">8 Adults</option>
+                                        <option value="9">9 Adults</option>
+                                        <option value="10">10 Adults</option>
+                                    </select>
+                                </div>
+                            </label>
+                            <label class="select" title="Children"> 
+                                <span>Children </span>
+                                <div>
+                                    <select name="childcount" id="childcount" title="Children" required="" fdprocessedid="0q3yrj">
+                                        <option value="0" selected="">0 Children</option>
+                                        <option value="1">1 Child</option>
+                                        <option value="2">2 Children</option>
+                                        <option value="3">3 Children</option>
+                                        <option value="4">4 Children</option>
+                                        <option value="5">5 Children</option>
+                                        <option value="6">6 Children</option>
+                                        <option value="7">7 Children</option>
+                                        <option value="8">8 Children</option>
+                                        <option value="9">9 Children</option>
+                                        <option value="10">10 Children</option>
+                                    </select>
+                                </div>
+                            </label>
+                        </fieldset>
+                        <button type="submit" class="alt" title="Find Lodging" fdprocessedid="hcypvp">Find Lodging</button>
+                    </form>
+                    <script>document.addEventListener('DOMContentLoaded',()=>{const f=document.querySelector('#book-tabs-37949-top');
+                        f.addEventListener('submit',(e)=>{const parse=str=>{const bits=str.split('-');
+                        return bits[0].substr(2,2)+bits[1]+bits[2]};
+                        const arrival=f.querySelector('input[name=arrivaldate]'),returning=f.querySelector('input[name=departuredate]');
+                        if(returning.value<arrival.value){returning.focus();
+                        e.preventDefault();
+                        return}})})
+                    </script>
+                </div>
+                <div class="js-tabcontent tabs__content" id="book-tabs-37951-top" aria-hidden="true" role="tabpanel" aria-labelledby="label_book-tabs-37951-top">
+                    <h2 class="u-hide-visual">Fights</h2>
+                    <form method="get" action="https://www.skyscanner.com/transport/flights/" target="_blank">
+                        <fieldset>
+                            <label class="date" title="Departure Date"> 
+                                <span>Departure Date </span> 
+                                <input name="start-date" class="date" type="text" placeholder="Departure Date" required="">
+                            </label>
+                            <label class="date" title="Returning Date"> 
+                                <span>Returning Date </span> 
+                                <input name="end-date" class="date" type="text" placeholder="Returning Date" required="">
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label class="text" title="Departure City Airport Code">
+                                <span>Departure City Airport Code </span>
+                                <input name="from" type="text" value="" autocomplete="off" placeholder="Departure City Airport Code" required="">
+                            </label>
+                            <label class="select" title="Arrival Airport">
+                                <span>
+                                    Arrival Airport                                    
+                                </span>
+                                <div>
+                                    <select name="arrival" id="arrival" title="Arrival Airport" required="">
+                                        <option value="">Select One</option>
+                                        <option value="MTJ">MTJ</option>
+                                        <option value="TEX">TEX</option>
+                                    </select>
+                                </div>
+                            </label> 
+                            <input type="hidden" name="rtn" value="True"> 
+                            <input type="hidden" name="ccy" value="USD"> 
+                            <input type="hidden" name="lang" value="en"> 
+                            <input type="hidden" name="ucy" value="US">
+                            <input type="hidden" name="cabinclass" value="Economy">
+                            </fieldset>
+                            <button type="submit" class="alt" title="Find Flights">Find Flights</button>
+                    </form>
+                    <script>document.addEventListener('DOMContentLoaded',()=>{const f=document.querySelector('#book-tabs-37951-top form');f.addEventListener('submit',(e)=>{e.preventDefault();const parse=str=>{const bits=str.split('-');return bits[0].substr(2,2)+bits[1]+bits[2]};const from=f.querySelector('input[name=from]'),arrival=f.querySelector('select[name=arrival]'),departure=f.querySelector('input[name=start-date]'),returning=f.querySelector('input[name=end-date]');if(returning.value<departure.value){returning.focus();return}
+    const url='https://www.skyscanner.com/transport/flights/'+from.value+'/'+arrival.value+'/'+parse(departure.value)+'/'+parse(returning.value);window.open(url)})})</script></div><div class="js-tabcontent tabs__content" id="book-tabs-37950-top" aria-hidden="true" role="tabpanel" aria-labelledby="label_book-tabs-37950-top"><h2 class="u-hide-visual">Offers &amp; Packages</h2><form method="get" action="https://book.telluride.com/v2/lodging-offers?" target="_blank"><fieldset><label class="date" title="Arrival Date"> <span>
+    Arrival Date </span> <input name="arrivaldate" class="date" type="text" placeholder="Arrival Date" required=""></label>
+    <label class="date" title="Departure Date"> <span>
+    Departure Date </span> <input name="departuredate" class="date" type="text" placeholder="Departure Date" required=""></label></fieldset><fieldset><label class="select" title="Adults"> <span>
+    Adults </span><div><select name="adultcount" id="adultcount" title="Adults" required=""><option value="1" selected="">1 Adult</option><option value="2">2 Adults</option><option value="3">3 Adults</option><option value="4">4 Adults</option><option value="5">5 Adults</option><option value="6">6 Adults</option><option value="7">7 Adults</option><option value="8">8 Adults</option><option value="9">9 Adults</option><option value="10">10 Adults</option></select></div></label>
+    <label class="select" title="Children"> <span>
+    Children </span><div><select name="childcount" id="childcount" title="Children" required=""><option value="0" selected="">0 Children</option><option value="1">1 Child</option><option value="2">2 Children</option><option value="3">3 Children</option><option value="4">4 Children</option><option value="5">5 Children</option><option value="6">6 Children</option><option value="7">7 Children</option><option value="8">8 Children</option><option value="9">9 Children</option><option value="10">10 Children</option></select></div></label></fieldset><button type="submit" class="alt" title="Find Offers">Find Offers</button></form></div><div class="js-tabcontent tabs__content" id="book-tabs-37955-top" aria-hidden="true" role="tabpanel" aria-labelledby="label_book-tabs-37955-top"><h2 class="u-hide-visual">Shuttles</h2><form method="get" action="https://book.telluride.com/v2/products/transport?" target="_blank"><label class="date" title="Shuttle Date"> <span>
+    Shuttle Date </span> <input name="startDate" class="date" type="text" placeholder="Shuttle Date" required=""></label><button type="submit" class="alt" title="Find a Shuttle">Find a Shuttle</button></form></div></div></div></div></section>
+
+
+
+
+
+
+
+
+
+
+

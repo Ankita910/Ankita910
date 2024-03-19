@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      margin: 20px;
+    }
+
+    .hero-section {
+      position: relative;
+      height: 500px;
+      overflow: hidden;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(70%);
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero-content h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .hero-content a {
+      background-color: #fff;
+      color: #333;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 20px;
+      border-radius: 4px;
+    }
+
+    .destination-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .destination-card {
+      width: 300px;
+      margin: 20px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .destination-card:hover {
+      transform: scale(1.05);
+    }
+
+    .destination-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .destination-card h3 {
+      margin: 10px 0;
+    }
+
+    .destination-card p {
+      color: #666;
+    }
+
+    .cta-section {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .cta-section h2 {
+      margin-bottom: 20px;
+    }
+
+    .cta-section a {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 20px;
+      border-radius: 4px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Travel Website</h1>
+    <nav>
+      <ul>
+        <li><a href="Home Page.html">Home</a></li>
+        <li><a href="Destinations.html">Destinations</a></li>
+        <li><a href="Tours.html">Tours</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <img class="hero-image" src="https://www.allianz-partners.com/en_global/products/travel/_jcr_content/root/parsys/wrapper_copy/wrapper/image.img.82.3360.jpeg/1656941434579/travel-1800x600px.jpeg" alt="Hero Image">
+      <div class="hero-content">
+        <h1>Namaste!</h1>
+        <h1>Come Fall In LOVE With INDIA </h1>
+        <p>Explore the country and create unforgettable memories.</p>
+        <a href="#">Get Started</a>
+      </div>
+      
+    </section>
+    <section class="destination-section">
+      <div class="destination-card">
+        <img src="https://travelmykashmir.com/wp-content/uploads/2022/09/book-online-shikara-ride-in-Srinagar-Dal-lake-and-Nigeen-Lake-1.jpg" alt="Destination 1">
+        <h3>Jammu and Kashmir</h3>
+        <p>Famous for its scenic beauty, picturesque landscapes, and the majestic Himalayas.
+          <br>The name <b>"Jammu"</b> is derived from the ancient name <b>"Jamboo,"</b> which was the capital of the region. <b>"Kashmir"</b> is believed to have originated from the <em>Sanskrit</em> word <b>"Kashyapa Mira,"</b> meaning the land of sage <em><b>Kashyapa.</b></em>
+          <br><b>Famous tourist attraction:</b> Vaishno Devi Mandir,Dal Lake,Indira Gandhi Tulip Garden,etc.
+        </p>
+      </div>
+      <div class="destination-card">
+        <img src="https://www.india-tours.com/blog/wp-content/uploads/2021/03/places-to-visit-in-ladakh.jpg" alt="Destination 2">
+        <h3>Leh-Ladakh</h3>
+        <p>This region is renowned for its rugged and stunning landscapes, including high mountain passes, crystal-clear lakes, and ancient monasteries. 
+          <br>Leh, the main town of Ladakh, attracts tourists for its Tibetan Buddhist culture, adventure activities like trekking and rafting, and scenic beauty.
+          <br><b>Famous tourist attraction:</b>Buddhist sites,Himalayas,Kargil district,etc.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://i.pinimg.com/originals/72/89/38/728938beb2a98ec53168bf13b68bb29d.jpg " alt="Destination 3">
+        <h3>Himachal Pradesh</h3>
+        <p>Known for its stunning hill stations, adventure sports, and snow-capped mountains.
+          <br><b>"Himachal"</b> translates to <em><b>"Abode of Snow"</b></em> in <em>Sanskrit</em>, reflecting its snowy landscapes.
+          <br><b>Famous tourist attraction:</b>The Rohtang Pass,The spiritual town of Dharamshala, Hill stations like Shimla and Manali,adventure sports,etc.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://static.toiimg.com/thumb/61820954.cms?resizemode=75&width=1200&height=900" alt="Destination 4">
+        <h3>Punjab</h3>
+        <p>Famous for its rich agricultural heritage, vibrant culture, and delicious cuisine.
+          <br>The name <b>"Punjab"</b> is a combination of two words: <b>"Punj"</b> meaning <b>"Five"</b> and <b>"Ab"</b> meaning <b>"Water,"</b> signifying <em><b>"Land of Five Rivers."</b></em>
+          <br><b>Famous tourist attraction: </b>The Golden Temple in Amritsar, The Wagah Border ceremony,etc.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://www.shutterstock.com/image-photo/reflection-nainital-on-naini-lake-260nw-514690165.jpg" alt="Destination 5">
+        <h3>Uttarakhand</h3>
+        <p>Renowned for its scenic beauty, pilgrimage sites like Rishikesh and Haridwar, and trekking destinations.
+         <br> The name <b>Uttarakhand:</b> means <b>"Northern Land"</b> or <em><b>"Land of the North."</b></em>
+         <br><b>Famous tourist attraction:</b>The holy river Ganges, Valley of Flowers National Park,  Jim Corbett National Park,etc.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+       <img src="https://i.pinimg.com/originals/5a/f1/c3/5af1c3bf6407c374592fbffa8ee2bd0f.jpg" alt="Destination 6">
+        <h3>Haryana</h3>
+        <p>Known for its agricultural productivity, historical sites like Kurukshetra, and traditional art forms.
+          <br>The name <b>"Haryana"</b> is derived from the <em>Sanskrit</em> words <b>"Hari" <em>(Lord Vishnu)</em></b> and <b>"Ayana" <em>(Home)</em></b>, meaning <b><em>"The Abode of Lord Vishnu."</em></b>
+          <br><b>Famous tourist attraction:</b> Sultanpur National Park and Surajkund Mela.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Taj_Mahal%2C_Agra%2C_India_edit3.jpg/1200px-Taj_Mahal%2C_Agra%2C_India_edit3.jpg"alt="Destination 7">
+        <h3>Uttar Pradesh</h3>
+        <p>Uttar Pradesh, often referred to as the <em><b>"Heartland of India,"</b></em> is a state located in the northern part of the country. It is known for its historical and cultural significance, vibrant festivals, and architectural marvels.
+          <br>The name <b>"Uttar Pradesh"</b> means <b>"Northern Province"</b>in <em>Hindi</em>, denoting its location in the northern region of India.
+          <br><b>Famous tourist attraction:</b>Taj Mahal,City of Varanasi,City of Lucknow,City of Allahabad,etc.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://media.istockphoto.com/id/530927704/photo/mahabodhi-temple-bodhgaya.jpg?s=612x612&w=0&k=20&c=MeuSoIquuLhsQB5JNv3zDn8G6IPuNRlbcIW9EZd4o3o=" alt="Destination 8">
+        <h3>Bihar</h3>
+        <p>Renowned for its historical significance, ancient ruins of Nalanda and Bodh Gaya, and fertile Gangetic plains.
+          <br>The name <b>"Bihar"</b> is believed to have originated from the <em>Sanskrit</em> word <b>"Vihara,"</b> meaning <b>"Monastery,"</b> reflecting the region's <em>Buddhist influence.</em>
+          <br><b>Famous tourist attraction:</b>Bodh Gaya,Nalanda,City of Patna,City of Rajgir, etc.
+        </p>   
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://assets-news.housing.com/news/wp-content/uploads/2022/09/03174756/sikkim-places-to-visit-feature-compressed.jpg" alt="Destination 9">
+        <h3>Sikkim</h3>
+        <p>Known for its stunning mountainous landscapes, Buddhist monasteries, and rich biodiversity.
+          <br>The name <b>"Sikkim"</b> is believed to have originated from the <em>Limbu</em>words <b>"Su"<em>(New)</em></b> and <b>"Khyim" <em>(Palace)</em></b>, referring to the palace built by the first ruler of Sikkim.
+          <br><b>Famous tourist attraction:</b>Tsomgo Lake,Nathula Pass,Gurudongmar Lake,Yumthang Valley,Rumtek Monastery,City of Gangtok
+        </p>
+      </div>
+        
+      <div class="destination-card">
+       <img src="https://assets.sentinelassam.com/h-upload/2021/02/01/194824-tea-garden-1.webp" alt="Destination 10">
+       <h3>Assam</h3>
+        <p>Known for its tea plantations, Kaziranga National Park, and the majestic Brahmaputra River.
+          <br>The name <b>"Assam"</b> is believed to have originated from the <em>Ahom dynasty</em>, the rulers of the region, and <b>"Asama,"</b> meaning <em><b>"peerless"</b></em> in <em>Sanskrit</em>.
+          <br><b>Famous tourist attraction:</b> Kamakhya Temple, Kaziranga National Park, Majuli Island,etc.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://ihplb.b-cdn.net/wp-content/uploads/2023/06/sunrise-in-dong-village-arunachal-pradesh.jpg" alt="Destination 11">
+        <h3>Arunachal Pradesh</h3>
+        <p>Known for its pristine natural beauty, diverse tribal culture, and the easternmost point of India.
+          <br> The name <b>"Arunachal Pradesh"</b> translates to <em><b>"Land of the Rising Sun"</b></em> in <em>Sanskrit</em>, symbolizing its location in the easternmost part of India.
+          <br><b>Famous tourist attraction:</b> Tawang Monastery, Ziro Valley,Namdapha National Park, etc.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2020/01/Kohima_16th-Jan.jpg" alt="Destination 12">
+        <h3>Nagaland</h3>
+        <p>Renowned for its vibrant tribal culture, Hornbill Festival, and scenic landscapes.
+          <br> The name <b>"Nagaland"</b> is derived from the <em>Nagas</em>, the <em>dominant ethnic group</em> in the state, and <b>"Land"</b> signifying the <em><b>territory of the Nagas</b></em>.
+          <br><b>Famous tourist attraction:</b> Dzukou Valley, Kohima War Cemetery,Khonoma Village,etc.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://www.outlookindia.com/traveller/wp-content/uploads/2017/08/Loktak1_FI.jpg" alt="Destination 13">
+        <h3>Manipur</h3>
+        <p>Famous for its rich cultural heritage, traditional handloom and handicrafts, and the floating Keibul Lamjao National Park.
+         <br> The name <b>"Manipur"</b> is believed to have originated from two <em>Sanskrit</em> words: <b>"Mani"</b> meaning <b>"jewel"</b> and <b>"Pur"</b> meaning <b>"land,"</b> signifying the <em><b>"Land of Jewels."</b></em>
+          <br><b>Famous tourist attraction:</b> Loktak Lake, Kangla Fort, Shri Govindajee Temple,etc.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/12/cover-for-places-to-visit-in-mizoram.jpg" alt="Destination 14">
+        <h3>Mizoram</h3>
+        <p>Known for its lush green landscapes, unique Mizo culture, and the highest literacy rate in India.
+          <br>The name <b>"Mizoram"</b> is derived from the <em>Mizo</em> words <b>"Mi" <em>(people)</em></b> and <b>"Zoram" <em>(hill)</em></b>, meaning <b><em>"Land of the Hill People."</em></b>
+          <br><b>Famous tourist attraction:</b> Durtlang Hills, Blue Mountain National Park,Palak Lake,etc.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://dynamic.tourtravelworld.com/package-images/photo-big/dir_15/441384/254845.jpg" alt="Destination 15">
+        <h3>Tripura</h3>
+        <p>Renowned for its rich history, architectural wonders like Neermahal Palace, and the ancient Tripura Sundari Temple.
+          <br> The name <b>"Tripura"</b> is believed to have originated from the combination of two <em>Sanskrit</em> words: <b>"Tri"</b> meaning <b>"three"</b> and <b>"Pura"</b> meaning <b>"cities,"</b> symbolizing the <em><b>three ancient cities</b></em> of the region.
+          <br><b>Famous tourist attraction:</b> Unakoti Hill, Neermahal Palace,Sepahijala Wildlife Sanctuary,etc.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://i0.wp.com/indiatrail.org/wp-content/uploads/2015/01/13.jpg?resize=710%2C575&ssl=1" alt="Destination 16">
+        <h3>Meghalaya</h3>
+        <p>Famous for its living root bridges, beautiful waterfalls, and the wettest place on Earth, Cherrapunjee.
+          <br>The name <b>"Meghalaya"</b> translates to <b>"Abode of Clouds"</b> in <em>Sanskrit</em>, reflecting the region's mist-covered landscapes.
+          <br><b>Famous tourist attraction:</b> Double Decker Living Root Bridge, Mawlynnong Village,Nohkalikai Waterfall,etc.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://lp-cms-production.imgix.net/2022-03/shutterstockRF_667856146.jpg" alt="Destination 17">
+        <h3>West Bengal</h3>
+        <p>Renowned for its cultural heritage, historical landmarks like Victoria Memorial, and the vibrant city of Kolkata.
+          <br>The name <b>"West Bengal"</b> signifies its location in the western part of the larger Bengal region.
+          <br><b>Famous tourist attraction:</b> Sunderbans National Park, Darjeeling Hill Station, and Howrah Bridge.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://i0.wp.com/indiathedestiny.com/wp-content/uploads/2016/05/tata_steel_banner.jpg?resize=808%2C354" alt="Destination 18">
+        <h3>Jharkhand</h3>
+        <p>Famous for its abundant mineral resources, dense forests, and tribal culture.
+          <br>The name <b>"Jharkhand"</b> is a combination of two words: <b>"Jhar"</b> meaning <b>"Bushes"</b> and <b>"Khand"</b> meaning <b>"Land,"</b> symbolizing the region's <em><b>dense forest cover</b></em>.
+          <br><b>Famous tourist attraction:</b>Ranchi Hill,Dassam Falls,Hazaribagh Wildlife Sanctuary,Baidyanath Jyotirlinga Temple (Deoghar),Tata Steel Zoological Park,Sun Temple (Marundeeswarar Temple),etc.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://miro.medium.com/v2/resize:fit:603/1*fYA-b-KA9UUqPL2OsDYkQw.png" alt="Destination 19">
+        <h3>Rajasthan</h3>
+        <p>Famous for its magnificent palaces, vibrant culture, and desert landscapes.
+          <br>The name <b>"Rajasthan"</b> is derived from the combination of two words: <b>"Raja" <em>(King)</em></b> and <b>"Sthan" <em>(Land)</em></b>, meaning <em><b>"Land of Kings."</b></em>
+          <br><b>Famous tourist attraction:</b> Jaipur's Hawa Mahal and Amer Fort, Udaipur's Lake Palace,Jaisalmer's Thar Desert,etc.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://bhagyashritravels.com/wp-content/uploads/2019/10/White-Rann-of-Kutch-Feature.jpg" alt="Destination 20">
+        <h3>Gujarat</h3>
+        <p>Known for its rich cultural heritage, the birthplace of Mahatma Gandhi, and the Rann of Kutch.
+          <br> The name <b>"Gujarat"</b> is believed to be derived from the <em>Sanskrit</em> word <b>"Gurjara-Rashtra,"</b> referring to the <em><b>Gurjara kingdom</b></em>.
+          <br><b>Famous tourist attraction:</b> The UNESCO World Heritage site of Rani ki Vav, Gir National Park, the Sabarmati Ashram,Rann of kutch etc.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://www.transindiatravels.com/wp-content/uploads/sanchi-2.jpg" alt="Destination 21">
+        <h3>Madhya Pradesh</h3>
+        <p>Renowned for its ancient temples, wildlife sanctuaries like Kanha National Park, and historical sites like Khajuraho.
+          <br><b>"Madhya Pradesh"</b> translates to <em><b>"Central Province"</b></em> in Hindi, indicating its central location in India
+          <br><b>Famous tourist attraction:</b>  Khajuraho Temples, Sanchi Stupa,Bandhavgarh National Park,etc.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://static.javatpoint.com/tourist-places/images/tourist-places-in-chhattisgarh4.jpg" alt="Destination 22">
+        <h3>Chhattisgarh</h3>
+        <p>Famous for its tribal culture, waterfalls like Chitrakote Falls, and ancient caves.
+          <br>The name <b>"Chhattisgarh</b>" is derived from the two <em>Sanskrit</em> words <b>"Chhattis"</b> meaning <b>"36"</b> and <b>"Garh"</b> meaning <b>"Fort,"</b> signifying <em><b>"Land of Thirty-Six Forts."</b></em>
+          <br> <b>Famous tourist attraction:</b> Chitrakote Falls, Bastar Dussehra Festival,the ancient caves of Kanger Ghati,etc .
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://content.thisday.app/uploads/medium_Jagannatha_Pattachitra_Painting_f9690ee8cb.jpg" alt="Destination 23">
+        <h3>Odisha</h3>
+        <p>Famous for its ancient temples, pristine beaches, and traditional arts and crafts.
+          <br>The name <b>"Odisha"</b> is derived from the <em>Sanskrit</em> word <b>"Odra Vishaya,"</b> referring to the land of the <em><b>ancient Odra kingdom</b></em>.
+          <br><b>Famous tourist attraction:</b>Jagannath Temple, Konark Sun Temple, and Chilika Lake.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://4.bp.blogspot.com/-RdoED_Tdy_c/VL6ZcbvMK9I/AAAAAAAAAV0/kRRpYNmQdl4/s1600/6d5e7400-7a4b-11e4-bc3d-3b7f2e2373c6_RTR4GEDV.jpg" alt="Destination 24">
+        <h3>Maharashtra</h3>
+        <p>Known for its bustling city of Mumbai, historical monuments like Ajanta and Ellora caves, and the Marathi film industry.
+          <br>The name <b>"Maharashtra"</b> is a combination of two words: <b>"Maha"</b> meaning <b>"Great"</b> and <b>"Rashtra"</b> meaning <b>"Nation,"</b> representing a <em><b> great nation.</b></em>
+          <br><b>Famous tourist attraction:</b> Mumbai's Gateway of India, Ajanta and Ellora Caves,The hill station of Lonavala,etc.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://st2.depositphotos.com/1141099/6198/i/450/depositphotos_61983329-stock-photo-historic-charminar.jpg" alt="Destination 25">
+        <h3>Telangana</h3>
+        <p>Known for its rich history, iconic Charminar, and the technology hub of Hyderabad.
+          <br>The name <b>"Telangana"</b> is believed to have originated from the combination of two words: <b>"Telugu"</b> referring to the <em>native language </em>and <b>"Angana"</b> meaning <b>"Territory."</b>
+          <br><b>Famous tourist attraction:</b> Charminar, Golconda Fort,Ramoji Film City,etc.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://chaibisket.com/wp-content/uploads/2017/09/08-2.jpg" alt="Destination 26">
+        <h3>Andhra Pradesh</h3>
+        <p>Renowned for its historical sites like Amaravati, Tirupati temple, and the Telugu film industry.
+          <br>The name <em>"Andhra Pradesh"</em> is a combination of two words: <b>"Andhra"</b> refers to the ancient <em><b>Andhra dynasty</b></em>, and <b>"Pradesh" </b>means <b>"Province"</b> in Hindi.
+          <br><b>Famous tourist attraction:</b> Tirupati Balaji Temple, Araku Valley,The Borra Caves,etc .
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mysore_Palace_Morning.jpg/800px-Mysore_Palace_Morning.jpg" alt="Destination 27">
+        <h3>Karnataka</h3>
+        <p>Known for its architectural wonders like Mysore Palace, diverse wildlife, and the IT capital of India, Bengaluru.
+          <br>The name <b>"Karnataka"</b> is derived from the <em>Kannada</em> words <b>"Karu"</b> <em>(Elevated)</em> and <b>"Nadu"</b> <em>(Land)</em>, signifying <em><b>"Elevated Land."</b></em>
+          <br><b>Famous tourist attraction:</b>Mysore Palace,Hampi,Coorg,Gokarna,etc.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://www.holidest.com/images/indiatours/goa/romantic-Goa-4.JPG" alt="Destination 28">
+        <h3>Goa</h3>
+        <p>Renowned for its stunning beaches, Portuguese architecture, and vibrant nightlife.
+          <br>The name <b>"Goa"</b> is believed to have originated from the <em>Sanskrit </em>word <b>"Gomantak,"</b> meaning <em><b>"Land of the Gods."</b></em>
+          <br><b>Famous tourist attraction:</b> Calangute Beach, Basilica of Bom Jesus, and Dudhsagar Falls.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://live.staticflickr.com/1530/25512446353_fb668488b0_b.jpg" alt="Destination 29">
+        <h3>Tamil Nadu</h3>
+        <p>Famous for its ancient temples, classical music and dance forms like Bharatanatyam, and the bustling city of Chennai.
+          <br>The name <b>"Tamil Nadu"</b> translates to <em><b>"Land of Tamils"</b></em> or <em><b>"Tamil Country,"</b></em> reflecting the region's predominant Tamil-speaking population.
+          <br><b>Famous tourist attraction:</b> Meenakshi Amman Temple in Madurai, Marina Beach in Chennai, and the hill station of Ooty.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://www.sobha.com/blog/wp-content/uploads/2022/05/6.png" alt="Destination 30">
+        <h3>Kerala</h3>
+        <p>Known for its backwaters, palm-fringed beaches, and Ayurvedic treatments.
+          <br>The name <b>"Kerala"</b> is believed to have originated from the combination of two <em>Sanskrit</em> words: <b>"Kera"</b> meaning <b>"Coconut Tree"</b> and <b>"Alam"</b> meaning<b> "Land,"</b> signifying <em><b>"Land of Coconut Trees."</b></em>
+          <br><b>Famous tourist attraction:</b> Backwaters of Alleppey, Munnar hill station, and the tranquil beaches of Kovalam.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjy7mXpfylPANbNDrjhRsde2Pz0z4NUtLDQauDx7-We14uzWozVV3rrXI_gxWjR_ZphxDHq1o3eOcvEKF1N1LJzYCkQlG7tVrsYu8i_3sGdk9kiNOiWFetaK6-qsvN39VkrsE3Y9I4dv0xAK_QhW3kgkJvoQJdIkbMVMBmAB1__h26rDPrc6FZrUS7y=w1200-h630-p-k-no-nu" alt="Destination 31">
+        <h3>Delhi</h3>
+        <p>Delhi, the <em>capital city of India</em>, is a vibrant blend of history, culture, and modernity. It is known for its bustling streets, iconic landmarks, and diverse cuisine.
+          <br><b>Places:</b>Red Fort,India Gate,Qutub Minar,Chandni Chowk.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20180221130258/iStock-500320921.jpg" alt="Destination 32">
+        <h3>Puducherry</h3>
+        <p> Puducherry, also known as <em><b>Pondicherry</b></em>,it  offers a unique blend of <em>French and Indian culture</em>.
+          <br>It is famous for its French colonial architecture, tranquil beaches, and spiritual retreats like Auroville and the Aurobindo Ashram. 
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://www.aartigyan.com/Images/TampleImages/1538806611pop.jpg" alt="Destination 33">
+        <h3>Dadra and Nagar Haveli</h3>
+        <p> Known for its serene landscapes and rich tribal heritage, Dadra and Nagar Haveli offer a tranquil escape. 
+          <br>Visit the Vanganga Lake Garden, the Tribal Cultural Museum, and the picturesque Dudhni Lake for a refreshing experience.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://media.istockphoto.com/id/944807630/photo/fort-diu-at-night.jpg?s=612x612&w=0&k=20&c=gUUx1tSqCM8A_0kfzV71mzCDNyU6R-PxYC-Q8i3ORTU=" alt="Destination 34">
+        <h3>Daman and Diu</h3>
+        <p>Daman, a coastal town, entices visitors with its <em>sun-kissed</em> beaches and <em>colonial charm</em>. 
+          <br>Explore the historic Fort of St. Jerome, relax on Devka Beach, and enjoy water sports at Jampore Beach.
+          <br>The island of Diu is famed for its beautiful beaches and <b>Portuguese heritage.</b> 
+          <br>Discover the magnificent Diu Fort, relax on Nagoa Beach, and visit the stunning St. Paul's Church for a glimpse into the region's colonial past.
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://blog.wego.com/wp-content/uploads/Kalapathar-sunset-scaled.jpg" alt="Destination 35">
+        <h3>Andaman and Nicobar Islands</h3>
+        <p>Known for their stunning beaches, coral reefs, and rich biodiversity.
+          <br>The name <b>"Andaman"</b> is believed to have originated from the <em>Malay</em> word <b>"Handuman,"</b> meaning<b> "Forest,"</b> and <b>"Nicobar"</b> is derived from the Tamil word <b>"Nakkavaram,"</b> signifying <em><b>"Land of Naked People."</b></em>
+        </p>
+      </div>
+        
+      <div class="destination-card">
+        <img src="https://media.istockphoto.com/id/1224360439/photo/waiting-to-sail.jpg?s=612x612&w=0&k=20&c=XMtw1nX67rhb75bYZ4D_39WNkuHTaddHDjtsxz-2IJY=" alt="Destination 36">
+        <h3>Lakshadweep</h3>
+        <p>Renowned for its pristine beaches, coral atolls, and abundant marine life.
+          <br>The name <b>"Lakshadweep"</b> translates to <em><b>"A Hundred Thousand Islands"</b></em> in <em>Sanskrit</em>, describing the scattered islands in the <em>Arabian Sea</em>.
+        </p>
+      </div>
+    
+    </section>
+    <section class="cta-section">
+      <h2>
+        Start your journey now
+      </h2>
+      <a href="#">Book a Trip</a>
+    </section>
+  </main>
+    
+  <footer>
+    <p>&copy; 2023 Travel Website. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>
